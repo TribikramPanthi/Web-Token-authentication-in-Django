@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+</head>
+<body>
+	<h1>This is a contact form.</h1>
+	<p>Please fill the details</p>
+	<form action="/contact/" method="POST">
+		{% csrf_token %}
+		{{form.as_p}}
+
+		<input type="submit", value="Submit">
+	</form>
+
+</body>
